@@ -1,0 +1,65 @@
+#start-btn{
+  background-color: rgb(224, 14, 14);
+}
+
+.hide {
+  display: none;
+}
+.marker {
+  margin: 0 auto;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.cell.top {
+  border-top: none;
+}
+
+.cell.bottom {
+  border-bottom: none;
+}
+
+.cell.left {
+  border-left: none;
+}
+
+.cell.right {
+  border-right: none;
+}
+
+.cell.top.left {
+  border-top: none;
+  border-left: none;
+}
+
+.cell.top.right {
+  border-top: none;
+  border-right: none;
+}
+
+.cell.bottom.left {
+  border-bottom: none;
+  border-left: none;
+}
+
+.cell.bottom.right {
+  border-bottom: none;
+  border-right: none;
+}
+
+.turn-alert {
+  color: red;
+}
