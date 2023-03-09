@@ -11,6 +11,12 @@
   width: 100%;
   text-align: center;
 }
+.player-title {
+  width: 45%;
+}
+.player-one, .player-two {
+  font-size: 1.2rem;
+}
 
 .board {
   display: flex;
@@ -21,7 +27,7 @@
 }
 
 .row {
-  margin-left: 0;
+  margin: 0;
 }
 .cell {
   width: 100px;
