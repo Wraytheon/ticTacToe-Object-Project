@@ -94,6 +94,7 @@ class TicTacToeGame {
     // Check if the currentPlayer has a winning combination
     for (let combo of winningCombos) {
       let hasWon = true;
+      //* Check each cell in the combination for a match with the current player's marker symbol
       for (let cellId of combo) {
         if (
           !document
@@ -105,6 +106,7 @@ class TicTacToeGame {
           break;
         }
       }
+        // If the current player has won, display a message and disable all cells
       if (hasWon) {
         // If the currentPlayer has won, display a message and disable all cells
         document.getElementById(
@@ -113,9 +115,10 @@ class TicTacToeGame {
         this.cells.forEach((cell) => {
           cell.classList.add("clicked");
         });
-        break;
+        return true;
       }
     }
+    return false;
   }
 }
 
