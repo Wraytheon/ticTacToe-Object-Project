@@ -63,3 +63,7 @@
 .turn-alert {
   color: red;
 }
+
+.winner-cells-alert {
+  border: 1px solid red;
+}
