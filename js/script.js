@@ -112,6 +112,11 @@ class TicTacToeGame {
         document.getElementById(
           "result-text"
         ).innerHTML = `${this.currentPlayer} wins`;
+        // Highlight winning cells
+        for (let cellId of combo) {
+          document.getElementById(cellId).classList.add("winner-cells-alert")
+        }
+        // Disable all cells
         this.cells.forEach((cell) => {
           cell.classList.add("clicked");
         });

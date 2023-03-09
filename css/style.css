@@ -6,17 +6,23 @@
   display: none;
 }
 .marker {
-  margin: 0 auto;
+  font-size: 3rem;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .board {
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  width: 302px;
   margin: 0 auto;
   border: 1px solid black;
 }
 
+.row {
+  margin-left: 0;
+}
 .cell {
   width: 100px;
   height: 100px;
@@ -65,5 +71,7 @@
 }
 
 .winner-cells-alert {
-  border: 1px solid red;
+  border: 1px solid white;
+  color: white;
+  background-color: red;
 }
